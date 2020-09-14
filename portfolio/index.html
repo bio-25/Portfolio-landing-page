@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Responsive Portfoilio Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Kunal Bohra</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit, laboriosam alias, dolores cum, iure odit
+             iusto quasi quam deserunt distinctio repudiandae ullam maiores! Dolore deleniti a impedit laudantium quasi.</p>
+             <a href="#">Know more</a>
+        </div>
+        <ul class="sci">
+            <li class="remover1"><a href=""><img src="img/facebook.png"></a></li>
+            <li class="remover2"><a href=""><img src="img/linkedin.png"></a></li>
+            <li class="remover3"><a href=""><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <div class="container">
+        <ul>
+            <li class="remover"><a href="#">Home</a></li>
+            <li class="remover"><a href="#">About</a></li>
+            <li class="remover"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <script type ="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            if (sec.className==="banner active"){
+                sec.className="banner"; 
+            }
+            else{
+                sec.className="banner active"; 
+            }
+        }
+    </script>
+</body>
+</html>
